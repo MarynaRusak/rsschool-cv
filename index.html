@@ -3,11 +3,115 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My CV</title>
+    <title>Maryna Rusak CV</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <p>There will be my CV</p>
-    <img src="img/me.jpeg" alt="My photo">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-left">
+                <nav class="header-nav">
+                    <ul class="header-menu">
+                        <li><a class="nav-link" href="#about-me">About Me</a></li>
+                        <li><a class="nav-link" href="#education">Education</a></li>
+                        <li><a class="nav-link" href="#experience">Experience</a></li>
+                    </ul>
+                </nav>
+                <h1 class="header-title">Maryna Rusak</h1>
+                <h3>Junior Frontend Developer</h3>
+            </div>
+            <div class="header-right">
+                <img class="header-image" src="/img/me.jpeg" alt="Maryna Rusak">
+            </div>
+        </header>
+        <main class="main">
+            <div class="two-columns">
+                <div class="column-left">
+                    <section class="about-me" id="about-me">
+                        <h2>About Me</h2>
+                        <p><i>As a full-stack developer I am passionate about
+                            building user-centric web applications and websites
+                            that improve user experience and business performance.</i></p>
+                    </section>
+                    <section class="education"  id="education">
+                        <h2>Education</h2>
+                        <ul>
+                            <li><b>Bachelors</b>, Korean Language and Literature at 
+                            Tara’s Shevchenko National University of Kyiv, 2014-2018</li>
+                            <li><b>Students Exchange Program</b> at Korea University, Aug 2017-Dec 2017</li>
+                            <li><a href="https://cases.media/cert/3d10rz" target="_blank">Figma Basics</a> on <a href="https://cases.media/my/feed" target="_blank">Creative Practice</a>, 2022</li>
+                            <li>RSSchool JavaScript Frontend course, in progress, first project <a href="https://marynarusak.github.io/rsschool-cv/" target="_blank">CV</a></li>
+                        </ul>
+                    </section>
+                    <section class="experience" id="experience">
+                        <h2>Experience</h2>
+                        <ul>
+                            <li>Customer Service Agent at <a href="https://www.lovecrafts.com/en-gb" target="_blank">LoveCrafts Ukraine</a>, Nov 2018 - Sep 2019</li>
+                            <li>Product Data Specialist at <a href="https://www.lovecrafts.com/en-gb" target="_blank">LoveCrafts Ukraine</a>, Sep 2-19 - present</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="column-right">
+                    <section class="my-contacts">
+                        <h2>My Contacts:</h2>
+                        <ul>
+                            <li><b>GitHub: </b><a href="https://github.com/marynarusak" target="_blank">github.com/marynarusak</a></li>
+                            <li><b>E-mail: </b><a href="mailto:ms.maryna.tkachenko@gmail.com">ms.maryna.tkachenko@gmail.com</a></li>
+                            <li><b>Phone: </b>+(380)952291599</li>
+                        </ul>
+                    </section>
+                    <section class="my-skills">
+                        <h2>My Skills:</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Version Control: Git</li>
+                            <li>Figma Basics</li>
+                        </ul>
+                    </section>
+                    <section class="languages">
+                        <h2>Languages:</h2>
+                        <ul>
+                            <li>Ukrainian (native)</li>
+                            <li>English <a href="https://cert.efset.org/XwR43t?cid=em100a" target="_blank">C2</a> at 
+                                <a href="https://www.efset.org/" target="_blank">EF Set</a></li>
+                            <li>Korean (intermediate)</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <section class="code">
+                <h2>Code Example</h2>
+                <p>Here is an example of JavaScript code that toggles a mobile menu:</p>
+                <div class="code-pre">
+                    <code>
+<pre>
+let mobileMenu = document.querySelector('.mobile-menu');
+let menuBtnOpen = document.querySelector('.menu-btn-open');
+let menuBtnClose = document.querySelector('.menu-btn-close');
+let mobileLinks = document.querySelectorAll('.mobile-menu__link');
+
+let toggleMenu = () => mobileMenu.classList.toggle('is-open');
+
+menuBtnOpen.addEventListener('click', toggleMenu);
+menuBtnClose.addEventListener('click', toggleMenu);
+
+mobileLinks.forEach(link => {
+link.addEventListener('click', toggleMenu);
+});
+</pre>
+                    </code>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <a href="https://github.com/marynarusak" target="_blank">My GitHub</a>
+            <p>2024</p>
+            <a href="https://rs.school/courses/javascript" target="_blank">
+                <img src="img/rs-school-logo.svg" width="86" height="32" alt="RS School Logo">
+            </a>
+        </footer>
+    </div>
   </body>
 </html>
