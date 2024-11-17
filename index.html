@@ -85,23 +85,21 @@
                 <h2>Code Example</h2>
                 <p>Here is an example of JavaScript code that toggles a mobile menu:</p>
                 <div class="code-pre">
-                    <code>
-<pre>
-let mobileMenu = document.querySelector('.mobile-menu');
-let menuBtnOpen = document.querySelector('.menu-btn-open');
-let menuBtnClose = document.querySelector('.menu-btn-close');
-let mobileLinks = document.querySelectorAll('.mobile-menu__link');
-
-let toggleMenu = () => mobileMenu.classList.toggle('is-open');
-
-menuBtnOpen.addEventListener('click', toggleMenu);
-menuBtnClose.addEventListener('click', toggleMenu);
-
-mobileLinks.forEach(link => {
-link.addEventListener('click', toggleMenu);
-});
-</pre>
-                    </code>
+                    <pre><code>
+    let mobileMenu = document.querySelector('.mobile-menu');
+    let menuBtnOpen = document.querySelector('.menu-btn-open');
+    let menuBtnClose = document.querySelector('.menu-btn-close');
+    let mobileLinks = document.querySelectorAll('.mobile-menu__link');
+    
+    let toggleMenu = () => mobileMenu.classList.toggle('is-open');
+    
+    menuBtnOpen.addEventListener('click', toggleMenu);
+    menuBtnClose.addEventListener('click', toggleMenu);
+    
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', toggleMenu);
+    });
+                    </code></pre>
                 </div>
             </section>
         </main>
